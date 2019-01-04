@@ -3,7 +3,7 @@
 ## Project description
 ThermoLight is a thermometer look-alike display that can show up to four values using NeoPixels & the ESP8266.
 
-A more detailed description can be found on [hackster.io](https://www.hackster.io/har-bra/irbridge-controlling-ir-devices-via-alexa-web-interface-66ca06).
+A more detailed description can be found on [hackster.io](https://www.hackster.io/har-bra/thermolight-the-iot-thermometer-display-c543e6).
 
 ## Repository contents
 * C++ code that is running on the ESP8266, based on the Arduino core (in /code/esp8266)

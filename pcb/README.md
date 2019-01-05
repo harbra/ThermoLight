@@ -14,7 +14,8 @@ A more detailed description can be found on [hackster.io](https://www.hackster.i
 
 
 ## BOM
-*Note:* CCS811 and iAQ-Core can detect the same information and are connected to the same I2C bus. So only one of them needs to be equipped.
+_Note:_ CCS811 and iAQ-Core can detect the same information and are connected to the same I2C bus. So only one of them needs to be equipped.
+
 | Ref | Qnty | Value | Part | Footprint | Comment |
 | --- | ---- | ----- | ---- | --------- | ------- |
 | C1, C2, C3, C5, C44 | 5 | 10u | device:C | Capacitors_SMD:C_1206_HandSoldering | Unpolarized capacitor |

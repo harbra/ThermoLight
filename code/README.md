@@ -18,6 +18,7 @@ All code was developed in PlatformIO. After pulling the repository from GitHub, 
 * Adjust `lib_dir` and `lib_extra_dirs` in `/esp8266/platformio.ini` according to your local file setup.
 * Library and development dependencies for the webinterface need to be installed with `npm install` (this requires Node.js on your development machine). This pulls all required dependencies as specified in `/web/package.json`.
 * If changes on the webinterface have been done, use `npm run build` to package the files. The output is generated in `/web/dist/`. Copy the contents of this folder to `/esp8266/data/html/dist`.
+  _CAUTION:_ In order for iOS to be able to load the webinterface, only the gzipped version of `build.js` and `style.css` should be copied to `/esp8266/data/html/dist`.
 * For uploading to the ThermoLight, two approaches exist:
   * *wired:* connect a USB-to-serial-converter to the respective pins on the PCB. The respective pins are towards the top end of the PCB, below the ESP8266 and are labelled GND, TX and RX.
     Please note that `upload_port` needs to be commented out.

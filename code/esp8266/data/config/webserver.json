@@ -1,0 +1,31 @@
+{
+  "settings": {
+    "ap": {
+      "ssid": ["ThermoLight"],
+      "pwd": ["0123456789", false]
+    },
+    "sta": {
+      "ssid": [""],
+      "pwd": ["", false],
+      "enc": [7],
+      "dhcp": [true],
+      "ip": [null],
+      "gw": [null],
+      "sn": [null]
+    },
+    "time": {
+      "ntpen": [true],
+      "ntps1": ["pool.ntp.org"],
+      "ntps2": ["time.nist.gov"],
+      "ntps3": ["ptbtime1.ptb.de"],
+      "tz": [""]
+    },
+    "mqtt": {
+      "connect": [false],
+      "host": [""],
+      "port": [1883],
+      "user": [""],
+      "pass": ["", false]
+    }
+  }
+}

@@ -1,0 +1,428 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ESP8266
+LIBS:mylibrary
+LIBS:74xgxx
+LIBS:ac-dc
+LIBS:actel
+LIBS:allegro
+LIBS:Altera
+LIBS:analog_devices
+LIBS:battery_management
+LIBS:bbd
+LIBS:bosch
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:dc-dc
+LIBS:diode
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic_symbols
+LIBS:hc11
+LIBS:infineon
+LIBS:intersil
+LIBS:ir
+LIBS:Lattice
+LIBS:leds
+LIBS:LEM
+LIBS:logic_programmable
+LIBS:maxim
+LIBS:mechanical
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic24mcu
+LIBS:microchip_pic32mcu
+LIBS:modules
+LIBS:motor_drivers
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:Oscillators
+LIBS:powerint
+LIBS:Power_Management
+LIBS:pspice
+LIBS:references
+LIBS:rfcom
+LIBS:RFSolutions
+LIBS:sensors
+LIBS:silabs
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:transf
+LIBS:triac_thyristor
+LIBS:ttl_ieee
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:zetex
+LIBS:Zilog
+LIBS:thermolight-cache
+EELAYER 25 0
+EELAYER END
+$Descr User 5906 5906
+encoding utf-8
+Sheet 2 41
+Title "ESP-12S"
+Date ""
+Rev "1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ESP-12 U2
+U 1 1 59B98CD1
+P 2500 2300
+F 0 "U2" H 2500 2200 50  0000 C CNN
+F 1 "ESP-12" H 2500 2400 50  0000 C CNN
+F 2 "myfootprints:ESP-12S_SMD" H 2500 2300 50  0001 C CNN
+F 3 "" H 2500 2300 50  0001 C CNN
+	1    2500 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR017
+U 1 1 59B98CD2
+P 1400 1500
+F 0 "#PWR017" H 1400 1350 50  0001 C CNN
+F 1 "+3V3" H 1400 1640 50  0000 C CNN
+F 2 "" H 1400 1500 50  0001 C CNN
+F 3 "" H 1400 1500 50  0001 C CNN
+	1    1400 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR018
+U 1 1 59B98CD3
+P 950 1800
+F 0 "#PWR018" H 950 1650 50  0001 C CNN
+F 1 "+3V3" H 950 1940 50  0000 C CNN
+F 2 "" H 950 1800 50  0001 C CNN
+F 3 "" H 950 1800 50  0001 C CNN
+	1    950  1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR019
+U 1 1 59B98CD4
+P 2500 1000
+F 0 "#PWR019" H 2500 850 50  0001 C CNN
+F 1 "+3V3" H 2500 1140 50  0000 C CNN
+F 2 "" H 2500 1000 50  0001 C CNN
+F 3 "" H 2500 1000 50  0001 C CNN
+	1    2500 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR020
+U 1 1 59B98CD5
+P 4200 1800
+F 0 "#PWR020" H 4200 1650 50  0001 C CNN
+F 1 "+3V3" H 4200 1940 50  0000 C CNN
+F 2 "" H 4200 1800 50  0001 C CNN
+F 3 "" H 4200 1800 50  0001 C CNN
+	1    4200 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR021
+U 1 1 59B98CD6
+P 4500 1800
+F 0 "#PWR021" H 4500 1650 50  0001 C CNN
+F 1 "+3V3" H 4500 1940 50  0000 C CNN
+F 2 "" H 4500 1800 50  0001 C CNN
+F 3 "" H 4500 1800 50  0001 C CNN
+	1    4500 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 59B98CD7
+P 1400 1850
+F 0 "R2" V 1480 1850 50  0000 C CNN
+F 1 "10k" V 1400 1850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1330 1850 50  0001 C CNN
+F 3 "" H 1400 1850 50  0001 C CNN
+	1    1400 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 59B98CD8
+P 950 2050
+F 0 "R1" V 1030 2050 50  0000 C CNN
+F 1 "10k" V 950 2050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 880 2050 50  0001 C CNN
+F 3 "" H 950 2050 50  0001 C CNN
+	1    950  2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push RST1
+U 1 1 59B98CD9
+P 1200 1800
+F 0 "RST1" H 1250 1900 50  0000 L CNN
+F 1 "TL3315NF160Q" H 1200 1740 50  0000 C CNN
+F 2 "myfootprints:TL3315" H 1200 2000 50  0001 C CNN
+F 3 "" H 1200 2000 50  0001 C CNN
+	1    1200 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR022
+U 1 1 59B98CDA
+P 1200 1500
+F 0 "#PWR022" H 1200 1250 50  0001 C CNN
+F 1 "GND" H 1200 1350 50  0000 C CNN
+F 2 "" H 1200 1500 50  0001 C CNN
+F 3 "" H 1200 1500 50  0001 C CNN
+	1    1200 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR023
+U 1 1 59B98CDB
+P 3100 1200
+F 0 "#PWR023" H 3100 950 50  0001 C CNN
+F 1 "GND" H 3100 1050 50  0000 C CNN
+F 2 "" H 3100 1200 50  0001 C CNN
+F 3 "" H 3100 1200 50  0001 C CNN
+	1    3100 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R4
+U 1 1 59B98CDC
+P 4200 2150
+F 0 "R4" V 4280 2150 50  0000 C CNN
+F 1 "10k" V 4200 2150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4130 2150 50  0001 C CNN
+F 3 "" H 4200 2150 50  0001 C CNN
+	1    4200 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push PROG1
+U 1 1 59B98CDD
+P 3900 2100
+F 0 "PROG1" H 3950 2200 50  0000 L CNN
+F 1 "TL3315NF160Q" H 3900 2040 50  0000 C CNN
+F 2 "myfootprints:TL3315" H 3900 2300 50  0001 C CNN
+F 3 "" H 3900 2300 50  0001 C CNN
+	1    3900 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR024
+U 1 1 59B98CDE
+P 3900 1800
+F 0 "#PWR024" H 3900 1550 50  0001 C CNN
+F 1 "GND" H 3900 1650 50  0000 C CNN
+F 2 "" H 3900 1800 50  0001 C CNN
+F 3 "" H 3900 1800 50  0001 C CNN
+	1    3900 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R5
+U 1 1 59B98CDF
+P 4500 2150
+F 0 "R5" V 4580 2150 50  0000 C CNN
+F 1 "10k" V 4500 2150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4430 2150 50  0001 C CNN
+F 3 "" H 4500 2150 50  0001 C CNN
+	1    4500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 59B98CE0
+P 4800 2150
+F 0 "R6" V 4880 2150 50  0000 C CNN
+F 1 "10k" V 4800 2150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4730 2150 50  0001 C CNN
+F 3 "" H 4800 2150 50  0001 C CNN
+	1    4800 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR025
+U 1 1 59B98CE1
+P 4800 1800
+F 0 "#PWR025" H 4800 1550 50  0001 C CNN
+F 1 "GND" H 4800 1650 50  0000 C CNN
+F 2 "" H 4800 1800 50  0001 C CNN
+F 3 "" H 4800 1800 50  0001 C CNN
+	1    4800 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR026
+U 1 1 59B98CE2
+P 2500 3300
+F 0 "#PWR026" H 2500 3050 50  0001 C CNN
+F 1 "GND" H 2500 3150 50  0000 C CNN
+F 2 "" H 2500 3300 50  0001 C CNN
+F 3 "" H 2500 3300 50  0001 C CNN
+	1    2500 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 59B98CE3
+P 2850 1200
+F 0 "C2" H 2875 1300 50  0000 L CNN
+F 1 "10u" H 2875 1100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 2888 1050 50  0001 C CNN
+F 3 "" H 2850 1200 50  0001 C CNN
+	1    2850 1200
+	0    1    1    0   
+$EndComp
+Text Label 3400 2000 0    60   ~ 0
+ESP_TX
+Text Label 3400 2100 0    60   ~ 0
+ESP_RX
+Text Label 3400 2200 0    60   ~ 0
+ESP_SCL
+Text Label 3400 2300 0    60   ~ 0
+ESP_SDA
+Wire Wire Line
+	1600 2200 950  2200
+Wire Wire Line
+	950  1900 950  1800
+Wire Wire Line
+	1200 2000 1600 2000
+Wire Wire Line
+	1400 1500 1400 1700
+Connection ~ 1400 2000
+Wire Wire Line
+	1200 1600 1200 1500
+Wire Wire Line
+	3400 2400 4200 2400
+Wire Wire Line
+	3900 2400 3900 2300
+Wire Wire Line
+	4200 2400 4200 2300
+Connection ~ 3900 2400
+Wire Wire Line
+	4200 2000 4200 1800
+Wire Wire Line
+	3900 1900 3900 1800
+Wire Wire Line
+	3400 2500 4500 2500
+Wire Wire Line
+	4500 2500 4500 2300
+Wire Wire Line
+	4500 2000 4500 1800
+Wire Wire Line
+	3400 2600 4800 2600
+Wire Wire Line
+	4800 2600 4800 2300
+Wire Wire Line
+	4800 2000 4800 1800
+Wire Wire Line
+	2500 3200 2500 3300
+Wire Wire Line
+	2500 1000 2500 1400
+Wire Wire Line
+	3100 1200 3000 1200
+Wire Wire Line
+	2700 1200 2500 1200
+Connection ~ 2500 1200
+Text HLabel 1600 2100 0    60   BiDi ~ 0
+ADC
+Text HLabel 1600 2300 0    60   BiDi ~ 0
+GPIO16
+Text HLabel 1600 2400 0    60   BiDi ~ 0
+GPIO14
+Text HLabel 1600 2500 0    60   BiDi ~ 0
+GPIO12
+Text HLabel 1600 2600 0    60   BiDi ~ 0
+GPIO13
+Text HLabel 3700 2700 2    60   BiDi ~ 0
+ESP_SCL
+Text HLabel 3700 2800 2    60   BiDi ~ 0
+ESP_SDA
+Wire Wire Line
+	3400 2200 3600 2200
+Wire Wire Line
+	3600 2200 3600 2700
+Wire Wire Line
+	3600 2700 3700 2700
+Wire Wire Line
+	3400 2300 3550 2300
+Wire Wire Line
+	3550 2300 3550 2800
+Wire Wire Line
+	3550 2800 3700 2800
+$Comp
+L Conn_01x03 J1
+U 1 1 5AC14302
+P 4600 3250
+F 0 "J1" H 4600 3450 50  0000 C CNN
+F 1 "952-1951-ND" H 4600 3050 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm_SMD_Pin1Right" H 4600 3250 50  0001 C CNN
+F 3 "" H 4600 3250 50  0001 C CNN
+	1    4600 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR027
+U 1 1 5AC1439F
+P 3900 3150
+F 0 "#PWR027" H 3900 2900 50  0001 C CNN
+F 1 "GND" H 3900 3000 50  0000 C CNN
+F 2 "" H 3900 3150 50  0001 C CNN
+F 3 "" H 3900 3150 50  0001 C CNN
+	1    3900 3150
+	0    1    1    0   
+$EndComp
+Text Label 4400 3250 2    60   ~ 0
+ESP_RX
+Text Label 4400 3350 2    60   ~ 0
+ESP_TX
+Wire Wire Line
+	3900 3150 4400 3150
+$EndSCHEMATC

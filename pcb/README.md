@@ -12,10 +12,9 @@ A more detailed description can be found on [hackster.io](https://www.hackster.i
 ## Licenses
 * Schematic, PCB and enclosure design are licensed with [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
-## Hints
-* It seems inserting the diffusor slightly warps/bends the main enclosure part. This can lead to a slight bulging of the back lid. I removed some material towards the top end of the lid where the M2 screw goes to reduce the warping of the back lid.
 
 ## BOM
+*Note:* CCS811 and iAQ-Core can detect the same information and are connected to the same I2C bus. So only one of them needs to be equipped.
 | Ref | Qnty | Value | Part | Footprint | Comment |
 | --- | ---- | ----- | ---- | --------- | ------- |
 | C1, C2, C3, C5, C44 | 5 | 10u | device:C | Capacitors_SMD:C_1206_HandSoldering | Unpolarized capacitor |
@@ -34,5 +33,3 @@ A more detailed description can be found on [hackster.io](https://www.hackster.i
 | U4 | 1 | iAQ-Core | mylibrary:iAQ-Core | myfootprints:iAQ-Core | |
 | U5 | 1 | SHT31-D | mylibrary:SHT31-D | myfootprints:DFN-8-2.5x2.5-0.5mm-handsolder | |
 | U6 | 1 | CCS811 | mylibrary:CCS811 | myfootprints:LGA_CCS811 | |
-
-_Note:_ CCS811 and iAQ-Core can detect the same information and are connected to the same I2C bus. So only one of them needs to be equipped.

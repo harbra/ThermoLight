@@ -1,0 +1,36 @@
+{
+  "name": "web",
+  "description": "Frontend for ThermoLight.",
+  "version": "1.0.0",
+  "author": "harald <me@haraldbraun.name>",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --hot --mode=development",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules --mode=production"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "buefy": "^0.6.7",
+    "bulma": "^0.7.0",
+    "bulma-extensions": "^3.0.0",
+    "vue": "2.5.13",
+    "vue-router": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.6.0",
+    "compression-webpack-plugin": "^2.0.0",
+    "cross-env": "^5.0.5",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "html-loader": "^0.5.5",
+    "mini-css-extract-plugin": "^0.4.3",
+    "raw-loader": "^0.5.1",
+    "vue-loader": "^15.0.5",
+    "vue-template-compiler": "2.5.13",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.8"
+  }
+}

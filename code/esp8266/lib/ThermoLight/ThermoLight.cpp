@@ -155,7 +155,7 @@ bool ThermoLight::loadSettings()
       } else if(brightnesstype.equalsIgnoreCase("MQTT")) {
         double multiplicator=(brightnesssettings[3].as<double>()-brightnesssettings[2].as<double>())/(brightnesssettings[5].as<double>()-brightnesssettings[4].as<double>());
         if((brightnesssettings[5].as<double>()-brightnesssettings[4].as<double>())==0) multiplicator=0.;
-        double summand=-multiplicator+brightnesssettings[2].as<double>();
+        double summand=-multiplicator*brightnesssettings[4].as<double>()+brightnesssettings[2].as<double>();
         m_brightnessValueProvider=std::unique_ptr<ValueProviderMQTT>(new ValueProviderMQTT(controller,
                                                                                            brightnesssettings[1].as<String>(),
                                                                                            multiplicator,
@@ -783,7 +783,8 @@ void ThermoLight::mqttCallback(String, std::unique_ptr<char []>)
 
 void ThermoLight::setBrightness(double value, double lowerbound, double upperbound, bool zeroiflower)
 {
-  barController.setBrightness(value>upperbound ? upperbound : (value<lowerbound ? (zeroiflower ? 0 : lowerbound) : value));
+  uint8_t brightness_value=int(round(value>upperbound ? upperbound : (value<lowerbound ? (zeroiflower ? 0 : lowerbound) : value)));
+  barController.setBrightness(brightness_value);
 }
 
 void ThermoLight::writeNewSettings()
